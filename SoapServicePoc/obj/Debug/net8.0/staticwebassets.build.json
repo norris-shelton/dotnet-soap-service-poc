@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8SNoFOCQRnR1NgrTL6kKEa6j0/qySpVTphV5pa1t+zw=",
+  "Source": "SoapServicePoc",
+  "BasePath": "_content/SoapServicePoc",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
