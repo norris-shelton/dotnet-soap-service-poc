@@ -28,13 +28,13 @@ The service will start and display:
 - **User Service WSDL**: http://localhost:5000/UserService.asmx?wsdl
 - **Calculator Service WSDL**: http://localhost:5000/CalculatorService.asmx?wsdl
 
-### 3. Test SOAP Services (New Terminal)
+### 3. Test with Unified Client (New Terminal)
 ```bash
 cd SoapClient
 dotnet run
 ```
 
-You'll see SOAP test results for both services immediately.
+You'll see a menu with options to test SOAP services, REST APIs, or both protocols side-by-side.
 
 ### 4. Test REST APIs (Browser/Postman)
 
@@ -57,11 +57,11 @@ You'll see SOAP test results for both services immediately.
 - User Management (CRUD operations)
 - Calculator (Math operations)
 
-✅ **Multiple Access Methods**
-- SOAP endpoints with WSDL generation
-- REST endpoints with JSON responses
-- Interactive Swagger documentation
-- Test clients for both protocols
+✅ **Unified Test Client**
+- Single application tests both SOAP and REST protocols
+- Interactive menu for protocol selection
+- Side-by-side protocol comparison
+- Comprehensive testing of all endpoints
 
 ✅ **Production-Ready Features**
 - Proper error handling and validation
@@ -148,7 +148,7 @@ dotnet run --urls="http://localhost:8080"
 # Publish for deployment
 dotnet publish -c Release
 
-# Test SOAP client
+# Test unified client (SOAP and REST)
 cd SoapClient && dotnet run
 
 # View project structure

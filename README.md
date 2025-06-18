@@ -22,9 +22,8 @@ soap-service-poc/
 │   │   └── CalculatorService.cs    # Calculator service implementation
 │   ├── Program.cs                  # Application startup and configuration
 │   └── SoapServicePoc.csproj       # Project file
-├── SoapClient/                     # SOAP client test application
-│   ├── Program.cs                  # SOAP client implementation
-│   ├── RestClientProgram.cs        # REST client implementation
+├── SoapClient/                     # Unified test client application
+│   ├── Program.cs                  # Unified SOAP/REST client with menu system
 │   └── SoapClient.csproj           # Client project file
 └── README.md                       # This documentation
 ```
@@ -129,18 +128,24 @@ A mathematical operations service demonstrating different data types:
 
 ### Testing the Services
 
-#### SOAP Testing
+#### Unified Client Testing
 1. Navigate to the client directory:
    ```bash
    cd SoapClient
    ```
 
-2. Run the SOAP client:
+2. Run the unified client:
    ```bash
    dotnet run
    ```
 
-#### REST Testing
+3. Choose from the menu options:
+   - **Option 1**: Test SOAP Services (XML responses)
+   - **Option 2**: Test REST APIs (JSON responses)  
+   - **Option 3**: Test Both Protocols (side-by-side comparison)
+   - **Option 4**: Exit
+
+#### Alternative REST Testing
 - **Browser**: Visit http://localhost:5000/api/users or http://localhost:5000/api/calculator/info
 - **Swagger UI**: Use the interactive documentation at http://localhost:5000/swagger
 - **Postman**: Import the endpoints and test with JSON payloads
